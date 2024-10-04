@@ -1,0 +1,40 @@
+/* Asegúrate de que la tabla ocupa el 100% de su contenedor */
+.table-responsive {
+    margin: 20px 0; /* Añade margen para separarla de otros elementos */
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%; /* Asegura que la tabla use todo el ancho */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+}
+
+/* Estilos para las celdas de la tabla */
+.table th,
+.table td {
+    padding: 15px; /* Espaciado interno para celdas */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilo para el encabezado de la tabla */
+.table th {
+    background-color: #f8f9fa; /* Color de fondo del encabezado */
+    font-weight: bold; /* Negrita para el texto del encabezado */
+}
+
+/* Estilo para filas alternas */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Estilo para la fila en hover */
+.table tr:hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el mouse */
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+    .table th, .table td {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}

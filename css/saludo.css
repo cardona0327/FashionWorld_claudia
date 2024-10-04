@@ -1,0 +1,9 @@
+#saludo {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    font-size: 30px; /* Tamaño de fuente moderado */
+    color: #000000; /* Un color coral (naranja suave) que contrasta bien con el fondo azul */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar un pequeño relieve */
+    letter-spacing: 1px; /* Ligero espaciado entre letras */
+    margin-top: 20px; /* Espacio superior */
+}

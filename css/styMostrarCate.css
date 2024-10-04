@@ -1,0 +1,97 @@
+/* Estilo para la lista de categorías */
+.categoria-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada item de la categoría */
+.categoria-item {
+    position: relative;
+    background-color: #f2f2f2; /* Fondo gris para el contenedor de categoría */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para mejor distribución en móviles */
+    align-items: center; /* Centrar los demás contenidos */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+
+/* Estilo para el ID de la categoría */
+.categoria-id {
+    position: absolute; /* Posición absoluta para moverlo */
+    top: 10px; /* Espaciado desde la parte superior */
+    left: 10px; /* Alineación a la izquierda */
+    color: #555;
+    font-size: 14px; /* Tamaño de fuente para el ID */
+}
+
+/* Estilo para el título de la categoría */
+.categoria-titulo {
+    text-align: center; /* Centra el texto en la categoría */
+    margin: auto; /* Centra verticalmente el texto */
+    font-size: 18px; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto del título */
+    margin-top: 30px; /* Añadir margen superior para evitar superposición con el ID */
+}
+
+/* Estilo para la fecha de la categoría */
+.categoria-fecha {
+    color: #999;
+    font-size: 12px; /* Tamaño de fuente para la fecha */
+}
+
+/* Estilo para el botón de editar */
+.editar-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.editar-btn:hover {
+    background-color: #e95224; /* Color al pasar el mouse */
+}
+
+.editar-btn:active {
+    background-color: #3e8e41; /* Color al hacer clic */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .categoria-item {
+        padding: 15px; /* Aumentar el padding en pantallas pequeñas */
+        margin-bottom: 15px; /* Espacio inferior adicional */
+        flex-direction: column; /* Asegurar la dirección de la columna */
+        align-items: center; /* Centrar el contenido */
+    }
+
+    .categoria-titulo {
+        font-size: 16px; /* Tamaño de fuente del título más pequeño */
+    }
+
+    .categoria-id {
+        font-size: 12px; /* Tamaño de fuente del ID más pequeño */
+    }
+
+    .categoria-fecha {
+        font-size: 10px; /* Tamaño de fuente de la fecha más pequeño */
+    }
+
+    .editar-btn {
+        font-size: 12px; /* Tamaño de fuente del botón más pequeño */
+    }
+}

@@ -1,0 +1,132 @@
+/* Contenedor de categorías */
+#contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo de cada categoría (producto) */
+.producto-categoria {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(33.333% - 40px); /* 3 columnas en pantallas grandes */
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+/* Hover efecto */
+.producto-categoria:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.imagen-producto {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 250px; /* Altura fija para que todas las imágenes tengan la misma altura */
+    overflow: hidden; /* Oculta cualquier contenido que sobrepase los límites */
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se vea completa dentro del contenedor sin ser recortada */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* Estilo cuando no hay imagen */
+.sin-imagen {
+    color: #888;
+    font-style: italic;
+}
+
+/* Nombre y precio del producto */
+h5, strong {
+    color: #333;
+}
+
+/* Contenedor de los botones */
+#carfav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px; /* Espacio entre los botones, ajustado a 10px */
+}
+
+/* Botones de agregar al carrito y favoritos */
+.btn-agregar-carrito, .btn-favoritos {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+/* Estilo para el botón de carrito */
+.btn-agregar-carrito {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #31b0d5;
+}
+
+/* Estilo para el botón de favoritos */
+.btn-favoritos {
+    background-color: #ff5e5e;
+    color: white;
+}
+
+.btn-favoritos:hover {
+    background-color: #ff3838;
+}
+
+/* Estilo de los likes */
+.fa-heart {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.liked {
+    color: #ff5e5e;
+}
+
+.likes-count {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1200px) {
+    .producto-categoria {
+        width: calc(50% - 40px); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .producto-categoria {
+        width: 100%; /* 1 columna en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn-agregar-carrito, .btn-favoritos {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .fa-heart {
+        font-size: 16px;
+    }
+}

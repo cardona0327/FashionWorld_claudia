@@ -1,0 +1,70 @@
+/* Estilo general del formulario */
+#formu-busqueda {
+    display: flex;
+    justify-content: flex-end; /* Alinea el formulario a la derecha */
+    gap: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* Campo de búsqueda */
+#nombreProB {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #36DAFE;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+#nombreProB::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Efecto hover y focus en el campo de búsqueda */
+#nombreProB:focus {
+    border-color: #28A745;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2);
+}
+
+/* Botón de búsqueda */
+#enviar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28A745;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#enviar:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Aumenta el tamaño del botón en pantallas pequeñas */
+@media (max-width: 768px) {
+    #nombreProB {
+        width: 100%;
+    }
+    
+    #formu-busqueda {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #enviar {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
