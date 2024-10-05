@@ -1,0 +1,62 @@
+/* Estilo para el formulario */
+#form-password {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las etiquetas */
+#form-password .form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para los inputs */
+#input-old-password, #input-new-password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón */
+#btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+#btn-submit:hover {
+    background-color: #434190;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #form-password {
+        padding: 15px;
+    }
+
+    #input-old-password, #input-new-password {
+        font-size: 14px;
+    }
+
+    #btn-submit {
+        font-size: 16px;
+    }
+}
+

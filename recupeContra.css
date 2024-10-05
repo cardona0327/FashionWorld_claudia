@@ -1,0 +1,104 @@
+/* Estilo general del contenedor */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: linear-gradient(to right, #74ebd5, #9face6); /* Degradado colorido */
+}
+
+/* Estilo para el formulario de recuperar contraseña */
+#form-recuperar {
+    max-width: 400px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el título */
+#titulo-recuperar {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto descriptivo */
+#texto-recuperar {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los campos de entrada */
+#campo-correo {
+    margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas de los campos */
+#label-correo,
+#label-imagen {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Estilo para el botón de enviar */
+#btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Color verde */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-enviar:hover {
+    background-color: #218838; /* Color verde oscuro en hover */
+}
+
+/* Estilo para el botón de volver */
+#btn-volver {
+    text-align: center;
+    display: inline-block;
+    background-color: #6c757d; /* Color gris */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-volver:hover {
+    background-color: #5a6268; /* Color gris oscuro en hover */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #form-recuperar {
+        padding: 20px;
+    }
+
+    #titulo-recuperar {
+        font-size: 24px;
+    }
+
+    #texto-recuperar {
+        font-size: 14px;
+    }
+
+    #btn-enviar, #btn-volver {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
